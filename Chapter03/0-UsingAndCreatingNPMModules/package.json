@@ -1,0 +1,24 @@
+{
+  "name": "demo-npm",
+  "version": "1.0.0",
+  "description": "my first node package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/polatengin/b05277.git"
+  },
+  "keywords": [
+    "polatengin",
+    "npm",
+    "init"
+  ],
+  "author": "Engin Polat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polatengin/b05277/issues"
+  },
+  "homepage": "https://github.com/polatengin/b05277#readme"
+}

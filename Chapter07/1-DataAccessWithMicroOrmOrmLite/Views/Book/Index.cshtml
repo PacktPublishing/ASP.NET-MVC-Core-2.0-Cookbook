@@ -1,0 +1,9 @@
+@model List<Ch07.Book>
+
+<h2>Books</h2>
+<ul>
+    @foreach(var book in Model)
+    {
+        <li>@book.Name</li>
+    }
+</ul>

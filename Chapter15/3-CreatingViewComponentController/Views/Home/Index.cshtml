@@ -1,0 +1,39 @@
+﻿@model List<Product>
+
+<br />
+<div style="width:300px;">
+    @foreach (var p in Model)
+    {
+        <fieldset>
+            <div><span>Name: </span><span>@p.Name</span></div>
+            <div><span>Price: </span><span>@p.Price</span></div>
+            <div>
+                <input type="hidden" value="@p.Id" />
+                <input type="button" class="basket" value="Add to basket" />
+            </div>
+        </fieldset>
+<br />
+    }
+</div>
+
+@section scripts{
+    <script>
+        $(function () {
+            $("input[type=button]").click(function (e) {
+                e.preventDefault();
+                var id = $(this).prev().val();
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/AddToBasket",
+                    data: { "id": id },
+                    dataType: 'json',
+                    success: function () {
+                        //window.location = "Home/Index";
+                        //window.location = location.href; 
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    </script>
+}

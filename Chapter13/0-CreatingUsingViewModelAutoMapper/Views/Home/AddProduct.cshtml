@@ -1,0 +1,21 @@
+﻿@model ProductViewModel
+
+<p>Let's add a new product</p>
+@using (Html.BeginForm("AddProduct", "Home", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.LabelFor(x => x.Name, "Product Name")
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.Price, "Product Price")
+                @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+            </div>
+            <div>
+                <input type="submit" value="Add" />
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,8 @@
+{
+    "name": "ManagingFrontEndDependenciesWithBower",
+    "private": true,
+    "dependencies": {
+      "lodash": "latest"
+    },
+    "directory": "wwwroot/lib"
+  }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Lodash demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+</head>
+<body>
+    <script>
+        var teams = ["Barcelona", "Real Madrid", "Manchester United", "Borissia Dortmund", "Chelsea",  "Arsenal", "Bayern Munich", "Milan", "Juventus", "Galatasaray"];
+        console.log("First element in teams: ", _.first(teams));
+        console.log("Last element in teams: ", _.last(teams));
+
+        var books = [
+            { title: "Matrix", price: 40 },
+            { title: "Lord of the Rings", price: 30 },
+            { title: "Harry Potter", price: 30 },
+            { title: "White Fang", price: 5 },
+            { title: "Godfather", price: 25 }
+        ];
+
+        console.log("Name of the cheapest book is ", _.chain(books).sortBy('price').first().value().title)
+
+        console.log("Available chars:", _.times(26, function(x) { return String.fromCharCode(65+x); }));
+    </script>
+</body>
+</html>

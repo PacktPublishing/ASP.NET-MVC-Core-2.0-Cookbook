@@ -1,0 +1,7 @@
+﻿@model List<ProductViewModel>
+
+<br />
+@foreach (var p in Model)
+{
+    <p>Product @p.Id : @p.Name</p>
+}

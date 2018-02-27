@@ -1,0 +1,17 @@
+{
+  "name": "compiling-less-files-to-css-files-with-grunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "1.0.2",
+    "grunt-contrib-less": "1.4.1",
+    "grunt-contrib-watch": "1.0.0"
+  }
+}

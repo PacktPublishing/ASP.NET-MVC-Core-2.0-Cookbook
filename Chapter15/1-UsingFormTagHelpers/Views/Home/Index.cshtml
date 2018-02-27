@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-area="" asp-controller="Product" asp-action="AddProduct" method="post" asp-antiforgery="true">
+    <div asp-validation-summary="All"></div>
+ <div class="form-group">
+<label asp-for="Name"></label>
+<input type="text" asp-for="Name" />
+<span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div class="form-group">
+<label asp-for="Price"></label>
+<input type="text" asp-for="Price" />
+<span asp-validation-for="Price" class="text-danger"></span>
+</div>
+<div class="form-group">
+<label asp-for="CategoryName"></label>
+       <select asp-for="CategoryName" 
+asp-items="@Categories.GetCategories()">
+            <option disabled selected value="">
+Please select one category</option>
+       </select>
+<span asp-validation-for="CategoryName" 
+class="text-danger"></span>
+</div>
+    <div>
+        <input type="submit" value="Add" />
+    </div>
+</form>
