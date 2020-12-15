@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="dryioc" Version="2.12.7" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
   </ItemGroup>
 
 </Project>
